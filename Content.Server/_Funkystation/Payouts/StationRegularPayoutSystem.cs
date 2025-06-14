@@ -95,7 +95,7 @@ public sealed class StationRegularPayoutSystem : GameRuleSystem<StationRegularPa
             if (record is null)
                 continue;
 
-            if (criminalRecord.Item2.Status is SecurityStatus.Detained or SecurityStatus.Wanted)
+            if (!bankAccountComponent.ScripPayoutDetainedOrWanted && criminalRecord.Item2.Status is SecurityStatus.Detained or SecurityStatus.Wanted)
             {
                 record.PaySuspended = true;
                 continue;
