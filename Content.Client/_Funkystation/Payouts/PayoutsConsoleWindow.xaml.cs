@@ -1,0 +1,9 @@
+using Content.Client.UserInterface.Controls;
+
+namespace Content.Client._Funkystation.Payouts;
+
+[GenerateTypedNameReferences]
+public sealed partial class PayoutsConsoleWindow : FancyWindow
+{
+
+}

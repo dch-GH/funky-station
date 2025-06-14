@@ -1,7 +1,6 @@
-using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._Funkystation.Payouts.Prototypes;
+namespace Content.Shared._Funkystation.Payouts;
 
 [Serializable, DataDefinition]
 [Prototype("paymentSalary")]

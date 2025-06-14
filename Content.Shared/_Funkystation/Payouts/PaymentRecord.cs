@@ -1,6 +1,4 @@
-using Robust.Shared.Serialization;
-
-namespace Content.Server._Funkystation.Payouts;
+namespace Content.Shared._Funkystation.Payouts;
 
 [Serializable, DataRecord]
 public sealed class PaymentRecord
