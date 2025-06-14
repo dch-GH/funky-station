@@ -1,5 +1,5 @@
-using Content.Server._Funkystation.Payouts.Prototypes;
 using Content.Server.Cargo.Components;
+using Content.Shared._Funkystation.Payouts;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
 using Content.Server.StationRecords.Systems;
@@ -51,7 +51,7 @@ public sealed class PayoutSystem : EntitySystem
         {
             foreach (var job in salaryInfo.Roles)
             {
-                if(InitialPayoutInfo.TryGetValue(job, out var salary))
+                if (InitialPayoutInfo.TryGetValue(job, out var salary))
                 {
                     InitialPayoutInfo[job] = salary + salaryInfo.Salary;
                     continue;
